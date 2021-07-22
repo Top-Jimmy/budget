@@ -1,0 +1,130 @@
+body {
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#navigation {
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+}
+
+.navigationTile {
+  float: left;
+  flex-direction: row;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.navigationTile.currentStep {
+  background-color: aquamarine;
+  cursor: auto;
+}
+
+.bbody {
+  height: 100vh;
+  color: white;
+}
+
+.bcontent {
+  padding: 20px;
+}
+
+.actionBar {
+  width: 100vw;
+  height: 60px;
+  margin: 20px 0px;
+}
+
+.b_button {
+  font-size: 16px;
+}
+
+th {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+td {
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 5px;
+  height: 40px;
+}
+
+.radio_container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown_container {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.current_selection {
+  cursor: pointer;
+}
+
+.dropdown_options {
+  position: absolute;
+  left: 0px;
+  top: 25px;
+  z-index: 102;
+  display: none;
+}
+.dropdown_options.active {
+  display: initial;
+}
+
+.dropdown_option {
+  width: 100%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown_option_label {
+  padding: 10px;
+}
+
+.dropdown_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #D3D3D3;
+  opacity: .25;
+  display: none;
+  z-index: 101;
+}
+.dropdown_backdrop.active {
+  display: initial;
+}
