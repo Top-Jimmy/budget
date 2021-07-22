@@ -49,7 +49,7 @@ export const FirebaseProvider = props => {
                 setAuthUser(user);
             } else {
                 ui.start('#firebaseui-auth-container', uiConfig);
-                setAuthUser(null);
+                setAuthUser({});
             }
         });
         return () => {
@@ -108,7 +108,7 @@ export const FirebaseProvider = props => {
     const signout = () => {
         firebase.auth().signOut().then(() => {
         // Sign-out successful.
-            setAuthUser(null);
+            setAuthUser({});
         }).catch((error) => {
         // An error happened.
         });

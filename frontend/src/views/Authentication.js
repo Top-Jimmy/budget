@@ -6,14 +6,14 @@ const Authentication = props => {
     const { authUser } = firebaseState;
     
     let loginContent;
-    if (authUser && Object.keys(authUser).length === 0) {
+    // if (authUser && Object.keys(authUser).length === 0) {
         
-        loginContent = (
-            <React.Fragment>
-                <h1>Welcome to firebase hell</h1>
-            </React.Fragment>
-        );
-    }
+    //     loginContent = (
+    //         <React.Fragment>
+    //             <h1>Welcome to firebase hel</h1>
+    //         </React.Fragment>
+    //     );
+    // }
     return (
         <div className="authentication_container">
             {loginContent}
